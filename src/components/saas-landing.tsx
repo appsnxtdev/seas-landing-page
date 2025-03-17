@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronRight, Menu, X, Check, ArrowRight, Mail, Phone, MapPin } from "lucide-react"
+import Head from 'next/head'
+import { ChevronRight, Menu, X, Check, ArrowRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -48,6 +49,13 @@ export function SaasLanding() {
   }
 
   return (
+    <>
+    <Head>
+        <title>Inventory & CRM SaaS | AppsNxt Cloud</title>
+        <meta name="description" content="Best SaaS for showroom management, inventory tracking, and CRM solutions for small businesses and dealerships." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://yourdomain.com/" />
+      </Head>
     <div className="flex min-h-screen flex-col">
   {/* Header */}
   <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -523,6 +531,7 @@ export function SaasLanding() {
         </div>
       </footer>
     </div>
+    </>
   )
 }
 
