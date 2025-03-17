@@ -24,6 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Best SaaS for Showroom & Inventory Management | AppsNxt Cloud</title>
+        <meta name="description" content="AppsNxt Cloud Solutions offers the best SaaS for showroom management, vehicle inventory tracking, customer lead automation, and sales growth. Try now!" />
+        <meta name="keywords" content="showroom management, vehicle inventory software, SaaS CRM, auto dealership CRM, customer lead management" />
+        <meta name="robots" content="index, follow" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
