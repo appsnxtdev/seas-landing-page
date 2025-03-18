@@ -202,22 +202,22 @@ export function SaasLanding() {
             Discover the powerful tools that will transform how you do business.
           </p>
         </div>
-        <div className="grid gap-6 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 py-12 sm:grid-cols-1 md:grid-cols-2">
           {[
-            { title: "ProjectFlow", description: "Comprehensive project management solution with task tracking, team collaboration, and reporting.", image: "/placeholder.svg?height=300&width=400" },
-            { title: "AnalyticsPro", description: "Advanced analytics platform with real-time dashboards, custom reports, and predictive insights.", image: "/placeholder.svg?height=300&width=400" },
-            { title: "CRMConnect", description: "Customer relationship management system to track leads, manage sales, and improve customer service.", image: "/placeholder.svg?height=300&width=400" },
-            { title: "InvoiceMaster", description: "Streamlined invoicing and payment processing with automated reminders and financial reporting.", image: "/placeholder.svg?height=300&width=400" },
-            { title: "HRSuite", description: "Complete human resources management with employee records, time tracking, and performance reviews.", image: "/placeholder.svg?height=300&width=400" },
-            { title: "MarketingHub", description: "All-in-one marketing platform with campaign management, email automation, and performance tracking.", image: "/placeholder.svg?height=300&width=400" },
+            { title: "ShowroomPro", description: "Streamline your vehicle dealership with smart inventory, lead management, and seamless automation.", image: "/images/ShowroomPro.jpg" },
+            { title: "FieldOps", description: "Seamless remote site and project management—track progress, collaborate with teams, manage resources, and optimize operations from anywhere.", image: "/images/FieldOps.jpg" },
+            // { title: "CRMConnect", description: "Customer relationship management system to track leads, manage sales, and improve customer service.", image: "/placeholder.svg?height=300&width=400" },
+            // { title: "InvoiceMaster", description: "Streamlined invoicing and payment processing with automated reminders and financial reporting.", image: "/placeholder.svg?height=300&width=400" },
+            // { title: "HRSuite", description: "Complete human resources management with employee records, time tracking, and performance reviews.", image: "/placeholder.svg?height=300&width=400" },
+            // { title: "MarketingHub", description: "All-in-one marketing platform with campaign management, email automation, and performance tracking.", image: "/placeholder.svg?height=300&width=400" },
           ].map((product, index) => (
             <div key={index} className="group relative overflow-hidden rounded-lg border shadow-sm transition-all hover:shadow-md">
-              <div className="aspect-video overflow-hidden">
+              <div className="aspect-video overflow-hidden align-items-center">
                 <Image
                   src={product.image || "/placeholder.svg"}
                   alt={product.title}
-                  width={400}
-                  height={300}
+                  width={800}
+                  height={200}
                   className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
@@ -250,23 +250,23 @@ export function SaasLanding() {
           {[
             {
               name: "Starter",
-              price: "$49",
+              price: "Starts Rs.4999",
               description: "Perfect for small businesses just getting started.",
-              features: ["Access to 2 SaaS applications", "Up to 5 team members", "5GB storage", "Basic support", "Monthly updates"],
+              features: ["Affordable for small businesses","For up to 2 branches", "5GB storage"],
               popular: false,
             },
             {
               name: "Professional",
-              price: "$99",
+              price: "Starts Rs.9999",
               description: "Ideal for growing businesses with more demands.",
-              features: ["Access to all SaaS applications", "Up to 20 team members", "50GB storage", "Priority support", "Weekly updates", "Advanced analytics"],
+              features: ["Best for expanding businesses", "Up to 5 branches", "50GB storage", "Advanced analytics"],
               popular: true,
             },
             {
               name: "Enterprise",
-              price: "$249",
+              price: "Starts Rs.15999",
               description: "For large organizations requiring maximum capabilities.",
-              features: ["Access to all SaaS applications", "Unlimited team members", "500GB storage", "24/7 dedicated support", "Custom development", "Advanced security features", "API access"],
+              features: ["Custom solutions for large-scale operations", "For more than 5 branches", "500GB storage", "24/7 dedicated support", "Custom development", "Advanced security features"],
               popular: false,
             },
           ].map((plan, index) => (
@@ -419,32 +419,12 @@ export function SaasLanding() {
               <ul className="space-y-2">
                 <li>
                   <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    ProjectFlow
+                    ShowroomPro
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    AnalyticsPro
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    CRMConnect
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    InvoiceMaster
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    HRSuite
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    MarketingHub
+                    FieldOps
                   </Link>
                 </li>
               </ul>
@@ -467,16 +447,6 @@ export function SaasLanding() {
                     Blog
                   </Link>
                 </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    Press
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    Partners
-                  </Link>
-                </li>
               </ul>
             </div>
             <div className="space-y-4">
@@ -485,26 +455,6 @@ export function SaasLanding() {
                 <li>
                   <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
                     Documentation
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    Help Center
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    Community
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    Webinars
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-                    Status
                   </Link>
                 </li>
               </ul>
